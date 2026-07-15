@@ -2,6 +2,8 @@
 
 一个面向设计师个人作品展示的交互式作品集原型。项目以快速浏览为主入口，并提供“展岛”和“索引”两种作品浏览方式。
 
+线上地址：[https://lycmyt.github.io/sheji/](https://lycmyt.github.io/sheji/)
+
 ## 技术栈
 
 - React 19
@@ -27,6 +29,10 @@ npm run typecheck
 npm run build
 npm run preview
 ```
+
+## 部署
+
+`main` 分支的每次推送都会通过 GitHub Actions 构建并发布到 GitHub Pages。Vite 的公共路径固定为 `/sheji/`，与仓库站点地址保持一致。
 
 ## 体验特性
 

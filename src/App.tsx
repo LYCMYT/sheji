@@ -28,8 +28,8 @@ import { projects, type Project } from './data/projects'
 type ViewMode = 'field' | 'index'
 type StyleVars = CSSProperties & Record<`--${string}`, string | number>
 
-const stageImage = '/assets/portfolio-stage-1586.webp'
-const stageImageMobile = '/assets/portfolio-stage-960.webp'
+const stageImage = `${import.meta.env.BASE_URL}assets/portfolio-stage-1586.webp`
+const stageImageMobile = `${import.meta.env.BASE_URL}assets/portfolio-stage-960.webp`
 
 function getInitialView(): ViewMode {
   if (typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches) {
